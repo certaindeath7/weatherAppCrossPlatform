@@ -10,13 +10,13 @@ import {
 } from 'react-native';
 
 import Search from './screens/Search';
-
+import WeatherScreen from './screens/Home';
 
 const App= () => {
   return (
     <>
       <StatusBar barStyle="dark-content" backgroundColor="#00aaff"/>
-      <Search /> 
+      <WeatherScreen/>
 
     </>
   );
