@@ -3,7 +3,7 @@ import { Appbar, Title } from 'react-native-paper';
 import {View, Text} from 'react-native';
 
 //functional component
-export default Header =()=> {
+export default Header =(props)=> {
 
     return (
       <Appbar.Header
@@ -13,9 +13,11 @@ export default Header =()=> {
             }
             
         }}
+        //add style to the header bar
+        style={{flexDirection:"row", justifyContent:"center"}}
       >
-          <Title>
-              Weather App
+          <Title style={{color:"white"}}>
+            {props.name}
           </Title>
        
       </Appbar.Header>
